@@ -66,6 +66,13 @@ test('set', t => {
 	t.is(fixture1.arr[0], 2);
 	t.is(o, fixture1);
 
+	dotProp.set(fixture1, 'arr.0', 2);
+	dotProp.set(fixture1, 'arr.1', 2);
+	dotProp.set(fixture1, 'arr.2', 2);
+	dotProp.set(fixture1, 'arr.3', 2);
+	t.is(fixture1.arr[0], 2);
+	t.is(fixture1.arr[1], 2);
+
 	const o1 = dotProp.set(fixture1, 'foo', 2);
 	t.is(fixture1.foo, 2);
 	t.is(o1, fixture1);
