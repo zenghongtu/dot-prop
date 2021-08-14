@@ -62,6 +62,10 @@ test('set', t => {
 	const func = () => 'test';
 	let fixture1 = {};
 
+	const o = dotProp.set(fixture1, 'arr.0', 2);
+	t.is(fixture1.arr[0], 2);
+	t.is(o, fixture1);
+
 	const o1 = dotProp.set(fixture1, 'foo', 2);
 	t.is(fixture1.foo, 2);
 	t.is(o1, fixture1);

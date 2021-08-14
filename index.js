@@ -72,8 +72,11 @@ module.exports = {
 
 		for (let i = 0; i < pathArray.length; i++) {
 			const p = pathArray[i];
+			const next = Number(pathArray[i + 1]);
 
-			if (!isObject(object[p])) {
+			if (Number.isInteger(next) && next >= 0) {
+				object[p] = [];
+			} else {
 				object[p] = {};
 			}
 
