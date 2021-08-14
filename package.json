@@ -1,15 +1,9 @@
 {
-	"name": "dot-prop",
-	"version": "6.0.1",
+	"name": "dot-p",
+	"version": "0.2.0",
 	"description": "Get, set, or delete a property from a nested object using a dot path",
 	"license": "MIT",
-	"repository": "sindresorhus/dot-prop",
-	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
-	},
+	"repository": "zenghongtu/dot-prop",
 	"engines": {
 		"node": ">=10"
 	},
