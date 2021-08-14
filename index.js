@@ -76,7 +76,7 @@ module.exports = {
 
 			if (Number.isInteger(next) && next >= 0) {
 				object[p] = [];
-			} else {
+			} else if (!isObject(object[p])) {
 				object[p] = {};
 			}
 
